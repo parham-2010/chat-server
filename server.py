@@ -23,7 +23,7 @@ def send_message():
     else:
         return jsonify({"status": "error", "message": "user not specified"}), 400
 
-@app.route('/messages', methods=['GET'])
+@app.route('/msg', methods=['GET'])
 def get_messages():
     return jsonify(messages)
 
